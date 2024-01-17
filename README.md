@@ -1,9 +1,11 @@
 # Projet_DataOps_Data_Engeneering
 
-Membre du groupe
+Membres du groupe
 
-Czmil DOSSOU-YOVO
-DJONDANG Aoudou
-Moesha FOTSO
-Afi Huberte Tella TENUDA-EKLOU
-Eckson GLITHO
+Czmil DOSSOU-YOVO (Data Architect)
+Aoudou DJONDANG  (Data Scientist)
+Moesha FOTSO (Data Scientist)
+Joyce Ashley MASSAH NSANGOU (Data Architect)
+Afi Huberte Tella TENUDA-EKLOU (Data Engineer)
+Eckson GLITHO (Data Engineer)
+
