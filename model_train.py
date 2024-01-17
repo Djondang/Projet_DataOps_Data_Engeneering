@@ -10,7 +10,7 @@ from sklearn.pipeline import Pipeline
 # Charger le premier fichier contenant les données d'entraînement
 train_data = pd.read_csv('train.csv')
 
-# Charger le deuxième fichier contenant les données pour la prédiction
+# Charger le deuxième fichier contenant les données pour le test et la prédiction
 pred_data = pd.read_csv('test.csv')
 
 # Diviser les données d'entraînement en variables indépendantes et dépendantes
@@ -52,6 +52,8 @@ y_pred = model.predict(pred_data)
 # Ajouter les prédictions au dataframe
 pred_data['Predicted_Survived'] = y_pred
 
+# Exporter les prédictions au format CSV
+pred_data[['PassengerId', 'Predicted_Survived']].to_csv('predictions_titanic.csv', index=False)
 
 # Affichage des prédictions
 print('Un Aperçu de la prédiction')
