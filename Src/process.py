@@ -7,7 +7,7 @@ data_test = import_data_Test()  # Loading test data
 
 def transformation(data):
     # Dropping unnecessary columns from the dataset
-    data.drop(['Name', 'Ticket', 'Cabin', 'Embarked', 'PassengerId'], axis=1, inplace=True)
+    data.drop(['Name', 'SibSp', 'Parch', 'Ticket', 'Fare', 'Cabin', 'Embarked'], axis=1, inplace=True)
 
     # Encoding 'Sex' column to numerical values
     data['Sex'] = data['Sex'].replace({'male': 1, 'female': 0})
@@ -31,3 +31,5 @@ def transformation(data):
 
 
 transformation(data_train)  # Applying the transformation function to the training data
+
+data_train.to_csv('./Data/Titanic.csv', index = False)
